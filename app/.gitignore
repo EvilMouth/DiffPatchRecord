@@ -1,0 +1,10 @@
+/build
+/assets/apk/*.apk
+/assets/apkdiff/*.patch
+/assets/apkdiff/*.apk
+/assets/archive-patcher/*.patch
+/assets/archive-patcher/*.apk
+/assets/bsdiff/*.patch
+/assets/bsdiff/*.apk
+/assets/xdelta3/*.patch
+/assets/xdelta3/*.apk

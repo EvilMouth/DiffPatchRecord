@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/choose_differ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="工具"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/choose_differ_tips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_differ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choose_differ"
+        app:layout_constraintTop_toTopOf="@+id/choose_differ" />
+
+    <Button
+        android:id="@+id/choose_old_apk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="旧包"
+        app:layout_constraintStart_toStartOf="@+id/choose_differ"
+        app:layout_constraintTop_toBottomOf="@+id/choose_differ" />
+
+    <TextView
+        android:id="@+id/choose_old_apk_tips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_old_apk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choose_old_apk"
+        app:layout_constraintTop_toTopOf="@+id/choose_old_apk" />
+
+    <Button
+        android:id="@+id/choose_new_apk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="新包"
+        app:layout_constraintStart_toStartOf="@+id/choose_old_apk"
+        app:layout_constraintTop_toBottomOf="@+id/choose_old_apk" />
+
+    <TextView
+        android:id="@+id/choose_new_apk_tips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_new_apk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choose_new_apk"
+        app:layout_constraintTop_toTopOf="@+id/choose_new_apk" />
+
+    <Button
+        android:id="@+id/choose_patch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="差分包"
+        app:layout_constraintStart_toStartOf="@+id/choose_new_apk"
+        app:layout_constraintTop_toBottomOf="@+id/choose_new_apk" />
+
+    <TextView
+        android:id="@+id/choose_patch_tips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_patch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choose_patch"
+        app:layout_constraintTop_toTopOf="@+id/choose_patch" />
+
+    <Button
+        android:id="@+id/choose_final_apk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="最终包"
+        app:layout_constraintStart_toStartOf="@+id/choose_patch"
+        app:layout_constraintTop_toBottomOf="@+id/choose_patch" />
+
+    <TextView
+        android:id="@+id/choose_final_apk_tips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_final_apk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choose_final_apk"
+        app:layout_constraintTop_toTopOf="@+id/choose_final_apk" />
+
+    <Button
+        android:id="@+id/start_diff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="diff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/start_patch"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/start_diff_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/start_diff"
+        app:layout_constraintEnd_toEndOf="@+id/start_diff"
+        app:layout_constraintStart_toStartOf="@+id/start_diff" />
+
+    <Button
+        android:id="@+id/start_patch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="patch"
+        app:layout_constraintBottom_toBottomOf="@+id/start_diff"
+        app:layout_constraintEnd_toStartOf="@+id/start_install"
+        app:layout_constraintStart_toEndOf="@+id/start_diff" />
+
+    <TextView
+        android:id="@+id/start_patch_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/start_install"
+        app:layout_constraintEnd_toEndOf="@+id/start_patch"
+        app:layout_constraintStart_toStartOf="@+id/start_patch" />
+
+    <Button
+        android:id="@+id/start_install"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="install"
+        app:layout_constraintBottom_toBottomOf="@+id/start_patch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/start_patch" />
+
+    <TextView
+        android:id="@+id/md5_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/start_diff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_final_apk" />
+
+    <CheckBox
+        android:id="@+id/check_backup_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="patch后写回渠道信息（ng-plugin）"
+        app:layout_constraintStart_toStartOf="@+id/choose_final_apk"
+        app:layout_constraintTop_toBottomOf="@+id/choose_final_apk" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

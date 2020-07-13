@@ -1,0 +1,6 @@
+//include ':xdelta3'
+include ':apkdiff'
+include ':archive-patcher'
+include ':bsdiff'
+include ':app'
+rootProject.name = "Diff Patch Record"
